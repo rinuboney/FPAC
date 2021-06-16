@@ -1,6 +1,6 @@
 # KeyQ: End-to-End Learning of Keypoint Representations for Continuous Control from Images
 
-This is a PyTorch implementation of the **KeyQ** method proposed in the paper "End-to-End Learning of Keypoint Representations for Continuous Control from Images".
+This is a PyTorch implementation of the **KeyQ** method proposed in the paper "[End-to-End Learning of Keypoint Representations for Continuous Control from Images](https://arxiv.org/abs/2106.07995)" by Rinu Boney, Alexander Ilin, and Juho Kannala.
 
 ## Dependencies
 

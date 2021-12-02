@@ -7,7 +7,7 @@ from sac import SAC
 from keypoints_encoder import KeypointsEncoder
 
 
-class KeyQ(SAC):
+class FPAC(SAC):
     def __init__(self, cfg):
         self.encoder = KeypointsEncoder(cfg)
         with torch.no_grad():

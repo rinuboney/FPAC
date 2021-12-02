@@ -103,7 +103,7 @@ if __name__ == '__main__':
         hidden_layers = 2,
         hidden_size = 1024,
 
-        # KeyQ
+        # FPAC
         num_keypoints = 32,
         keypoint_temperature = 0.5,
         use_camera_offset = True,
@@ -138,8 +138,8 @@ if __name__ == '__main__':
     env, cfg = load_env(cfg)
 
     if cfg['observation'] == 'pixels':
-        from keyq import KeyQ
-        agent = KeyQ(cfg)
+        from fpac import FPAC
+        agent = FPAC(cfg)
     else:
         from sac import SAC
         agent = SAC(cfg)

@@ -1,6 +1,6 @@
-# KeyQ: End-to-End Learning of Keypoint Representations for Continuous Control from Images
+# Learning of feature points without additional supervision improves reinforcement learning from images
 
-This is a PyTorch implementation of the **KeyQ** method proposed in the paper "[Learning of feature points without additional supervision improves reinforcement learning from images](https://arxiv.org/abs/2106.07995)" by Rinu Boney, Alexander Ilin, and Juho Kannala.
+This is a PyTorch implementation of the **FPAC** method proposed in the paper "[Learning of feature points without additional supervision improves reinforcement learning from images](https://arxiv.org/abs/2106.07995)" by Rinu Boney, Alexander Ilin, and Juho Kannala.
 
 ## Dependencies
 
@@ -10,13 +10,13 @@ Install the required dependencies by creating an anaconda environment from `cond
 ```
 conda env create -f conda_env.yml
 ```
-and then activate the installed `keyq` environment: `conda activate keyq`
+and then activate the installed `fpac` environment: `conda activate fpac`
 
-Training KeyQ on the [DeepMind Control Suite](https://github.com/deepmind/dm_control) requires a valid [MuJoCo](http://www.mujoco.org/) installation. Refer to [https://github.com/deepmind/dm_control#requirements-and-installation](https://github.com/deepmind/dm_control#requirements-and-installation) for instructions on installing MuJoCo.
+Training FPAC on the [DeepMind Control Suite](https://github.com/deepmind/dm_control) requires a valid [MuJoCo](http://www.mujoco.org/) installation. Refer to [https://github.com/deepmind/dm_control#requirements-and-installation](https://github.com/deepmind/dm_control#requirements-and-installation) for instructions on installing MuJoCo.
 
 ## Experiments on PlaNet Benchmark
 
-KeyQ results reported in the paper (for the six tasks in the PlaNet benchmark) can be reproduced by running:
+FPAC results reported in the paper (for the six tasks in the PlaNet benchmark) can be reproduced by running:
 ```
 python train.py domain=ball_in_cup task=catch relative_xy=False
 python train.py domain=cartpole task=swingup

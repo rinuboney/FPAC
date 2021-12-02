@@ -1,4 +1,4 @@
-name: keyq
+name: fpac
 channels:
   - defaults
   - pytorch
